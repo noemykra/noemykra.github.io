@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Noemy · Chargée de communication digitale</title>
+<meta name="description" content="Portfolio de Noemy, chargée de communication digitale : réseaux sociaux, contenus et data. Bouygues Bâtiment Nord-Est, Volkswagen, missions clients, audits et reportings.">
+<meta property="og:title" content="Noemy · Chargée de communication digitale">
+<meta property="og:description" content="Réseaux sociaux, contenus et data. 5 ans d'alternance, 4 entreprises, 3 villes.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/noemy-chantier.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23232124'/%3E%3Ctext x='32' y='47' font-family='Impact,Arial Narrow,sans-serif' font-size='40' text-anchor='middle' fill='%23F6F2EB'%3EN%3C/text%3E%3Ccircle cx='50' cy='44' r='4' fill='%232A66D6'/%3E%3C/svg%3E">
+<style>:root{color-scheme:light} html,body{margin:0} img{max-width:100%} [hidden]{display:none!important} :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: fond sable, anthracite et bleu ciel tirés de la photo chantier ; photo portrait en héros. Titres Anton en grand, étiquettes "sticker" légèrement inclinées, cadres noirs à ombre décalée. Assuré, pas girly. */
+:root{
+  --bg:#F6F2EB;
+  --bg-2:#ECE5DA;
+  --card:#FFFDF9;
+  --ink:#232124;
+  --muted:#6A6560;
+  --accent:#2A66D6;
+  --accent-soft:#D7E3F7;
+  --line:#232124;
+  --on-ink:#F6F2EB;
+  --on-ink-muted:#B7B0A6;
+  --f-display:"Anton","Impact","Arial Narrow",sans-serif;
+  --f-body:"Manrope","Segoe UI",Arial,sans-serif;
+  --f-mono:"DM Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#131418; --bg-2:#1A1C21; --card:#21242A; --ink:#EFECE6; --muted:#B0AAA2;
+    --accent:#7FA8F2; --accent-soft:#25334A; --line:#EFECE6; --on-ink:#131418; --on-ink-muted:#5E5A55; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131418; --bg-2:#1A1C21; --card:#21242A; --ink:#EFECE6; --muted:#B0AAA2;
+    --accent:#7FA8F2; --accent-soft:#25334A; --line:#EFECE6; --on-ink:#131418; --on-ink-muted:#5E5A55; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6}
+.band{padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));position:relative}
+.in{max-width:1100px;margin:0 auto}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;margin:0;line-height:1.08;text-wrap:balance;text-transform:uppercase;letter-spacing:.005em}
+p{margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.mono{font-family:var(--f-mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.accent{color:var(--accent)}
+
+/* Stickers */
+.sticker{display:inline-block;font-family:var(--f-mono);font-size:13px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;
+  background:var(--card);color:var(--ink);border:2px solid var(--line);border-radius:999px;padding:6px 14px;box-shadow:3px 3px 0 var(--line);white-space:nowrap}
+.sticker.pink{background:var(--accent);color:#fff}
+.r1{transform:rotate(-3deg)} .r2{transform:rotate(2deg)} .r3{transform:rotate(-1.5deg)}
+
+/* HERO */
+.hero{padding-block:56px 64px;border-bottom:2px solid var(--line)}
+.hero .in{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:center}
+.hero-text{display:grid;gap:22px}
+.stickers{display:flex;flex-wrap:wrap;gap:12px}
+.hero h1{font-size:clamp(96px,17vw,210px);line-height:.9;letter-spacing:-.01em}
+.hero h1 span{color:var(--accent)}
+.role{font-family:var(--f-display);text-transform:uppercase;font-size:clamp(26px,3.4vw,38px);line-height:1.12}
+.role em{font-style:normal;color:var(--accent)}
+.intro{max-width:52ch;font-size:18px;color:var(--muted)}
+.intro strong{color:var(--ink)}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:560px}
+.fact{border-top:2px solid var(--line);padding-top:10px;display:grid;gap:4px}
+.fact strong{font-family:var(--f-display);font-weight:400;font-size:clamp(34px,4.4vw,50px);line-height:1}
+.fact span{font-size:14px;color:var(--muted);line-height:1.35}
+.hero-visual{position:relative}
+.frame{position:absolute;border:2px solid var(--line);box-shadow:8px 8px 0 var(--line);background:var(--card);padding:8px;border-radius:4px}
+.frame img{display:block;width:100%;height:100%;object-fit:cover;border-radius:2px}
+.portrait{position:relative;width:min(100%,420px);margin-left:auto;transform:rotate(1.5deg)}
+.portrait .frame{position:relative;inset:auto}
+.portrait .frame img{aspect-ratio:3/4}
+.portrait .sticker{position:absolute;z-index:2}
+.portrait .s-a{left:-18px;bottom:16%}
+.portrait .s-b{right:-12px;top:8%}
+
+nav.quick{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--ink)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--ink)}
+nav.quick .in{display:flex;flex-wrap:wrap;gap:4px 26px;padding-block:12px}
+nav.quick a{color:var(--on-ink);text-decoration:none;font-family:var(--f-mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+nav.quick a:hover{color:var(--accent-soft)}
+
+section.band{padding-block:84px;border-bottom:2px solid var(--line)}
+.alt{background:var(--bg-2)}
+.sec-head{display:grid;gap:22px;margin-bottom:48px}
+.sec-head h2{font-size:clamp(50px,8vw,96px);line-height:1.08;padding-top:.08em}
+.sec-head h2 .pk{color:var(--accent)}
+
+/* Cas */
+.case{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start}
+.case.rev .gallery{order:2}
+.gallery{display:grid;gap:18px;min-width:0}
+.gallery figure{margin:0;border:2px solid var(--line);box-shadow:6px 6px 0 var(--line);background:var(--card);padding:6px;border-radius:4px}
+.gallery img{display:block;width:100%;max-width:100%;border-radius:2px}
+.g-two{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);align-items:end}
+.credit{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.case-body{display:grid;gap:20px;min-width:0}
+.logo-chip{background:#fff;border:2px solid var(--line);border-radius:6px;padding:8px 12px;width:fit-content}
+.logo-chip img{height:40px;width:auto;display:block}
+.case h3{font-size:clamp(34px,4.4vw,48px)}
+.org{font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+.case-body > p{max-width:58ch}
+.fields{display:grid;gap:16px}
+.fields h4{margin:0 0 4px;font-family:var(--f-mono);font-weight:500;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.fields ul{margin:0;padding-left:20px}
+.fields li::marker{color:var(--accent)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-family:var(--f-mono);font-size:12.5px;border:1.5px solid var(--line);border-radius:999px;padding:3px 11px}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+
+.btn{display:inline-flex;align-items:center;gap:8px;width:fit-content;background:var(--ink);color:var(--bg);text-decoration:none;
+  font-family:var(--f-display);font-weight:400;font-size:17px;letter-spacing:.04em;text-transform:uppercase;
+  padding:10px 18px;border-radius:999px;border:2px solid var(--line);box-shadow:3px 3px 0 var(--accent);cursor:pointer;transition:transform .15s, box-shadow .15s}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--accent)}
+.btn.outline{background:transparent;color:var(--ink)}
+@media (prefers-reduced-motion: reduce){.btn{transition:none}.btn:hover{transform:none}}
+
+/* Cartes */
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.card{background:var(--card);border:2px solid var(--line);box-shadow:6px 6px 0 var(--line);border-radius:6px;padding:30px;display:grid;gap:18px;align-content:start}
+.card h3{font-size:34px}
+.docs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.doc{background:var(--card);border:2px solid var(--line);border-radius:6px;padding:28px;display:grid;gap:16px;align-content:space-between}
+.doc:nth-child(odd){box-shadow:6px 6px 0 var(--accent)}
+.doc:nth-child(even){box-shadow:6px 6px 0 var(--line)}
+.doc h3{font-size:32px}
+.doc p{color:var(--muted)}
+
+/* Parcours */
+.tl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px}
+.tl h3{font-size:32px;margin-bottom:16px}
+.step{display:grid;grid-template-columns:118px minmax(0,1fr);gap:18px;padding-block:14px;border-top:2px solid var(--line)}
+.step .when{font-family:var(--f-mono);font-size:14px;color:var(--accent);font-variant-numeric:tabular-nums}
+.step b{display:block;font-weight:700}
+.step span{color:var(--muted);font-size:15.5px}
+
+.efap{margin:20px 0 0;border:2px solid var(--line);box-shadow:6px 6px 0 var(--accent);background:var(--card);padding:6px;border-radius:4px;max-width:360px;transform:rotate(-1.5deg)}
+.efap img{display:block;width:100%;border-radius:2px}
+
+/* Compétences */
+.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.skill{display:grid;gap:14px;align-content:start}
+.skill h3{font-size:30px}
+.skill ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.skill li{background:var(--card);border:1.5px solid var(--line);border-radius:999px;padding:5px 14px;font-weight:600;font-size:14.5px}
+
+/* Loisirs */
+.hobbies{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.hobby{background:var(--card);border:2px solid var(--line);border-radius:6px;padding:30px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:start}
+.hobby:first-child{box-shadow:6px 6px 0 var(--accent)}
+.hobby:last-child{box-shadow:6px 6px 0 var(--line)}
+.hobby svg{width:72px;height:72px;display:block}
+.hobby h3{font-size:40px;margin-bottom:12px}
+.hobby p{color:var(--muted)}
+
+/* Contact */
+.contact{background:var(--ink);color:var(--on-ink);padding-block:96px;border-bottom:0}
+.contact .in{display:grid;gap:26px}
+.contact h2{font-size:clamp(64px,11vw,148px);line-height:1.02}
+.contact h2 span{color:var(--accent)}
+.contact p{color:var(--on-ink-muted);max-width:52ch}
+.mail{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.mail code{font-family:var(--f-mono);font-size:clamp(18px,3.4vw,28px);user-select:all;word-break:break-all}
+.contact .btn{background:var(--accent);color:#fff;border-color:var(--on-ink);box-shadow:3px 3px 0 var(--on-ink)}
+.contact .btn.ghost{background:transparent;color:var(--on-ink)}
+footer{background:var(--ink);color:var(--on-ink-muted);font-family:var(--f-mono);font-size:12px;padding-block:0 32px}
+
+@media (max-width:880px){
+  .portrait{margin:8px auto 0;width:min(100%,360px)}
+  .hero .in,.case,.cards,.tl,.docs,.hobbies{grid-template-columns:minmax(0,1fr)}
+  .case.rev .gallery{order:0}
+  .skills{grid-template-columns:minmax(0,1fr)}
+  
+  section.band{padding-block:60px}
+}
+@media (max-width:480px){
+  .step{grid-template-columns:minmax(0,1fr);gap:2px}
+  .card,.doc,.hobby{padding:22px}
+  .hobby{grid-template-columns:minmax(0,1fr)}
+  
+}
+
+/* ===== Téléphone ===== */
+header.band,section.band{overflow-x:clip}
+.hero-text,.sec-head,.case-body,.card,.doc,.fields,.skill,.contact .in,.gallery{grid-template-columns:minmax(0,1fr)}
+.g-two{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}
+h3{overflow-wrap:anywhere}
+@media (max-width:600px){
+  body{font-size:16px}
+  .hero{padding-block:32px 44px}
+  .hero .in{gap:32px}
+  .hero-text{gap:18px}
+  .hero h1{font-size:clamp(72px,24vw,116px)}
+  .role{font-size:24px}
+  .intro{font-size:16px}
+  .facts{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .fact strong{font-size:30px}
+  .fact span{font-size:12.5px}
+  .portrait{width:min(78%,300px);transform:rotate(1deg)}
+  .portrait .s-a{left:-10px}
+  .portrait .s-b{right:-6px}
+  .sticker{font-size:11.5px;padding:5px 11px}
+  nav.quick .in{flex-wrap:nowrap;overflow-x:auto;gap:22px;padding-block:12px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  nav.quick .in::-webkit-scrollbar{display:none}
+  nav.quick a{white-space:nowrap;flex:none}
+  nav.quick .in a:last-child{padding-right:44px}
+  section.band{padding-block:52px}
+  .sec-head{gap:16px;margin-bottom:32px}
+  .sec-head h2{font-size:clamp(40px,12vw,56px)}
+  .case,.cards,.docs,.hobbies,.tl{gap:28px}
+  .case h3{font-size:30px}
+  .card h3,.doc h3{font-size:26px}
+  .hobby h3{font-size:32px}
+  .tl h3,.skill h3{font-size:26px}
+  .gallery figure,.card,.efap{box-shadow:4px 4px 0 var(--line)}
+  .doc:nth-child(odd),.hobby:first-child{box-shadow:4px 4px 0 var(--accent)}
+  .doc:nth-child(even),.hobby:last-child{box-shadow:4px 4px 0 var(--line)}
+  .frame{box-shadow:5px 5px 0 var(--line);padding:6px}
+  .efap{max-width:100%}
+  .btn{font-size:15px;padding:10px 16px}
+  .links .btn{flex:1 1 auto;justify-content:center}
+  .contact{padding-block:64px}
+  .contact h2{font-size:clamp(52px,16vw,80px)}
+  .mail code{font-size:17px}
+}
+.nav-more{position:absolute;top:0;bottom:0;right:0;width:64px;border:0;padding:0 max(14px, env(safe-area-inset-right, 0px)) 0 0;cursor:pointer;
+  display:flex;align-items:center;justify-content:flex-end;color:var(--on-ink);font-family:var(--f-display);font-size:22px;
+  background:linear-gradient(90deg,transparent,var(--ink) 55%)}
+.nav-more span{display:inline-block}
+@media (prefers-reduced-motion: no-preference){.nav-more{animation:nudge 1.6s ease-in-out infinite}}
+@keyframes nudge{0%,100%{text-indent:0}50%{text-indent:6px}}
+</style>
+</head>
+<body>
+
+<header class="band hero">
+  <div class="in">
+    <div class="hero-text">
+      <div class="stickers">
+        <span class="sticker pink r1">Dispo · CDI / CDD</span>
+        <span class="sticker r2">Paris · Lille · Nancy</span>
+      </div>
+      <h1>Noemy<span>.</span></h1>
+      <p class="role">Chargée de communication digitale. <em>Contenus, réseaux, data.</em></p>
+      <p class="intro">Je raconte les métiers et les équipes, je fais grandir les communautés et <strong>je fais parler les chiffres</strong>. Aujourd'hui chez Bouygues Bâtiment Nord-Est, en MBA à l'EFAP avec une spécialisation IA et data.</p>
+      <div class="facts">
+        <div class="fact"><strong>5 ans</strong><span>d'alternance en communication</span></div>
+        <div class="fact"><strong>4</strong><span>entreprises : TPE, PME, grand groupe</span></div>
+        <div class="fact"><strong>3</strong><span>villes : Nancy, Lille, Paris</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="portrait">
+        <div class="frame"><img src="assets/img/noemy-chantier.jpg" alt="Noemy sur un chantier en tenue de sécurité, micro et trépied en main"></div>
+        <span class="sticker pink r1 s-a">Sur le terrain</span>
+        <span class="sticker r2 s-b">Made in alternance</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="band quick" aria-label="Sections">
+  <div class="in">
+    <a href="#bbne">Bouygues Bâtiment Nord-Est</a><a href="#volkswagen">Volkswagen</a><a href="#missions">Missions</a><a href="#audits">Audits &amp; reportings</a><a href="#parcours">Parcours</a><a href="#loisirs">Loisirs</a><a href="#contact">Contact</a>
+  </div>
+  <button class="nav-more" id="navMore" type="button" aria-label="Voir les autres rubriques" hidden>→</button>
+</nav>
+
+<section class="band" id="bbne">
+  <div class="in">
+    <div class="sec-head">
+      <span class="mono accent">Depuis septembre 2025</span>
+      <h2>Le bâtiment, <span class="pk">je le raconte.</span></h2>
+    </div>
+    <article class="case">
+      <div class="gallery">
+        <figure><img src="assets/img/residence-bouygues.jpg" alt="Résidence de logements livrée par Bouygues Bâtiment Nord-Est, façades colorées et toitures végétalisées"></figure>
+        <figure><img src="assets/img/noemy-bureau.jpg" alt="Noemy à son bureau, l'Instagram de Bouygues Bâtiment Nord-Est affiché à l'écran"></figure>
+        <span class="credit">Photo résidence · ACH Photo</span>
+      </div>
+      <div class="case-body">
+        <div class="logo-chip"><img src="assets/img/logo-bouygues-batiment-nord-est.png" alt="Logo Bouygues Bâtiment Nord-Est"></div>
+        <h3>Instagram &amp; contenus Bouygues Bâtiment Nord-Est</h3>
+        <p class="org">Bouygues Bâtiment Nord-Est · filiale de Bouygues Construction</p>
+        <p>Je gère le compte @bouygues_batiment_nordest de A à Z : planning, rédaction, visuels, publication et suivi des performances. L'objectif : montrer les chantiers, les femmes et les hommes qui les font, et donner envie de nous rejoindre.</p>
+        <div class="fields">
+          <div><h4>Contenus produits</h4>
+            <ul>
+              <li>Portraits de collaborateurs et Reels « Dilemmes »</li>
+              <li>Projets : Longwy Saintignon, tours de Strasbourg, Metz Borny, collège de Rémilly</li>
+              <li>Recrutement Trophée des Bâtisseurs pour les CAP et Bac Pro</li>
+              <li>Stories QCM et temps forts (ChangeNOW 2026)</li>
+            </ul>
+          </div>
+          <div><h4>Data &amp; reporting</h4>
+            <ul>
+              <li>Reportings Instagram mensuels et trimestriels</li>
+              <li>Benchmark de l'engagement de 7 comptes du BTP</li>
+              <li>Suivi Swello et Meta Insights</li>
+            </ul>
+          </div>
+          <div><h4>Communication interne</h4>
+            <ul>
+              <li>Scripts de la série vidéo « Flash » sur les bonnes pratiques chantier</li>
+              <li>Articles pour l'intranet</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags"><span class="tag">Canva</span><span class="tag">CapCut</span><span class="tag">Swello</span><span class="tag">Meta Insights</span><span class="tag">Make.com</span></div>
+        <div class="links">
+          <a class="btn" href="https://www.instagram.com/bouygues_batiment_nordest/" target="_blank" rel="noopener">Voir l'Instagram ↗</a>
+          <a class="btn outline" href="https://fr.linkedin.com/company/bouygues-batiment-nord-est" target="_blank" rel="noopener">Voir le LinkedIn ↗</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="band alt" id="volkswagen">
+  <div class="in">
+    <div class="sec-head">
+      <span class="mono accent">Community manager · Nancy · 2024-2025</span>
+      <h2>Du feed <span class="pk">au showroom.</span></h2>
+    </div>
+    <article class="case rev">
+      <div class="gallery g-two">
+        <figure><img src="assets/img/volkswagen-portes-ouvertes.jpg" alt="Visuel Instagram Volkswagen : portes ouvertes les 14 et 15 septembre 2024"></figure>
+        <figure><img src="assets/img/volkswagen-ventes-privees.jpg" alt="Story Instagram Volkswagen : ventes privées du 21 au 23 novembre 2024"></figure>
+      </div>
+      <div class="case-body">
+        <h3>Réseaux sociaux Volkswagen</h3>
+        <p class="org">Volkswagen Group Retail France</p>
+        <p>Animation des réseaux sociaux du réseau de concessions : création des visuels, rédaction et publication pour porter les temps forts commerciaux et faire venir du monde en showroom.</p>
+        <div class="fields">
+          <div><h4>Exemples</h4>
+            <ul>
+              <li>Post événement : portes ouvertes de septembre 2024</li>
+              <li>Story promo : ventes privées de novembre 2024, mentions réglementaires incluses</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags"><span class="tag">Canva</span><span class="tag">Instagram</span><span class="tag">Facebook</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="band" id="missions">
+  <div class="in">
+    <div class="sec-head">
+      <span class="mono accent">Conseil &amp; acquisition</span>
+      <h2>Missions <span class="pk">clients.</span></h2>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <span class="mono accent">Avec l'agence Trippple Club</span>
+        <h3>Nowa Care · Meta Ads</h3>
+        <p>Marque d'accompagnement en fertilité. Responsable de la phase 3 : stratégie d'acquisition et tunnel de conversion, avec un ton rassurant et jamais alarmiste.</p>
+        <div class="fields"><div><h4>Livrables</h4>
+          <ul>
+            <li>Architecture de campagnes Meta</li>
+            <li>Objectifs de coût par lead et conversion lead vers rendez-vous</li>
+            <li>Segmentation des audiences par profil</li>
+            <li>Deck de recommandation budgétaire et classeur Excel</li>
+          </ul>
+        </div></div>
+      </article>
+      <article class="card">
+        <span class="mono accent">E-commerce Shopify</span>
+        <h3>purepousse.com · SEO</h3>
+        <p>Marque de soins capillaires naturels. Audit SEO complet de la boutique et plan d'action pour gagner en visibilité organique.</p>
+        <div class="fields"><div><h4>Livrables</h4>
+          <ul>
+            <li>Audit technique, sémantique et GEO</li>
+            <li>Recommandations priorisées</li>
+            <li>Roadmap à 30, 60 et 90 jours</li>
+          </ul>
+        </div></div>
+        <a class="btn" href="audit-seo-purepousse.html" rel="noopener">Lire l'audit ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="audits">
+  <div class="in">
+    <div class="sec-head">
+      <span class="mono accent">À consulter</span>
+      <h2>Les chiffres, <span class="pk">je les fais parler.</span></h2>
+    </div>
+    <div class="docs">
+      <article class="doc">
+        <span class="mono accent">Audit SEO · juin 2026</span>
+        <h3>purepousse.com</h3>
+        <p>Audit technique, sémantique et GEO d'une boutique Shopify, avec roadmap à 30, 60 et 90 jours.</p>
+        <a class="btn" href="audit-seo-purepousse.html" rel="noopener">Lire l'audit ↗</a>
+      </article>
+      <article class="doc">
+        <span class="mono accent">Reporting · Bouygues Bâtiment Nord-Est · 2026</span>
+        <h3>Reporting Instagram</h3>
+        <p>Bilan juillet à octobre 2026 du compte @bouygues_batiment_nordest : abonnés, formats, stories, audience et recommandations.</p>
+        <a class="btn" href="reporting-instagram.html" rel="noopener">Voir le reporting ↗</a>
+      </article>
+      <article class="doc">
+        <span class="mono accent">Plan de communication</span>
+        <h3>20 Minutes TV</h3>
+        <p>Plan de communication digitale pour le lancement de la chaîne sur Instagram et Facebook.</p>
+        <a class="btn" href="https://drive.google.com/file/d/11NqiMPK7ML8nWrzlcieVzioSIUxvWPkP/view" target="_blank" rel="noopener">Ouvrir le plan ↗</a>
+      </article>
+      <article class="doc">
+        <span class="mono accent">Étude de cas · MBA</span>
+        <h3>SERiaL SPEAKER</h3>
+        <p>Diagnostic, recommandation stratégique et concept de « content factory ».</p>
+        <a class="btn" href="https://docs.google.com/presentation/d/10bZIjEQYbhHiLqu8BGNeQItnsBYOHm4wZjGfaMR4lLk/view" target="_blank" rel="noopener">Ouvrir la reco ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="parcours">
+  <div class="in">
+    <div class="sec-head">
+      <span class="mono accent">100 % alternance</span>
+      <h2>Mon <span class="pk">parcours.</span></h2>
+    </div>
+    <div class="tl">
+      <div>
+        <h3>Expériences</h3>
+        <div class="step"><span class="when">2025 → auj.</span><div><b>Chargée de communication</b><span>Bouygues Bâtiment Nord-Est</span></div></div>
+        <div class="step"><span class="when">2024 → 2025</span><div><b>Community manager</b><span>Volkswagen Group Retail France · Nancy</span></div></div>
+        <div class="step"><span class="when">2023 → 2024</span><div><b>Formatrice marketing digital</b><span>Prochedemoi.fr · Lille</span></div></div>
+        <div class="step"><span class="when">2022 → 2023</span><div><b>Chargée web marketing</b><span>Oltoog · Lille</span></div></div>
+      </div>
+      <div>
+        <h3>Formation</h3>
+        <div class="step"><span class="when">2025 → 2027</span><div><b>MBA Digital Marketing &amp; Communication</b><span>EFAP · spécialisation IA et data</span></div></div>
+        <div class="step"><span class="when">2022 → 2025</span><div><b>Bachelor Marketing digital &amp; communication audiovisuelle</b><span>ECITV · Lille</span></div></div>
+        <figure class="efap"><img src="assets/img/noemy-efap.jpg" alt="Noemy à l'EFAP, trophée en main devant les kakémonos du MBA DMB"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="competences">
+  <div class="in">
+    <div class="sec-head">
+      <span class="mono accent">Boîte à outils</span>
+      <h2>Ce que <span class="pk">je maîtrise.</span></h2>
+    </div>
+    <div class="skills">
+      <div class="skill"><h3>Contenus</h3><ul><li>Stratégie éditoriale</li><li>Rédaction réseaux</li><li>Scripts vidéo</li><li>Com interne</li><li>Création visuelle</li></ul></div>
+      <div class="skill"><h3>Data &amp; acquisition</h3><ul><li>Reporting KPI</li><li>Benchmark</li><li>Meta Ads</li><li>SEO</li><li>Google Ads</li><li>GA4</li></ul></div>
+      <div class="skill"><h3>Outils</h3><ul><li>Canva</li><li>CapCut</li><li>Suite Adobe</li><li>Swello</li><li>Make.com</li><li>IA générative</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="loisirs">
+  <div class="in">
+    <div class="sec-head">
+      <span class="mono accent">En dehors du travail</span>
+      <h2>Mon autre <span class="pk">terrain de jeu.</span></h2>
+    </div>
+    <div class="hobbies">
+      <article class="hobby">
+        <svg viewBox="0 0 72 72" aria-hidden="true">
+          <circle cx="36" cy="36" r="32" fill="var(--accent-soft)" stroke="var(--line)" stroke-width="3"/>
+          <path d="M4 36h64M36 4v64" stroke="var(--line)" stroke-width="3" fill="none"/>
+          <path d="M14 13c9 8 9 38 0 46M58 13c-9 8-9 38 0 46" stroke="var(--line)" stroke-width="3" fill="none"/>
+        </svg>
+        <div>
+          <h3>Basket</h3>
+          <p>Je joue en club. Entraînements, matchs, esprit d'équipe : ce que le terrain m'apprend, je le ramène au bureau.</p>
+        </div>
+      </article>
+      <article class="hobby">
+        <svg viewBox="0 0 72 72" aria-hidden="true">
+          <path d="M18 10h22l4 26h12a8 8 0 0 1 8 8v4H14z" fill="var(--accent-soft)" stroke="var(--line)" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M22 18h16M22 26h18" stroke="var(--line)" stroke-width="3"/>
+          <path d="M10 60h52a6 6 0 0 0 6-6" stroke="var(--line)" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M22 48v12M50 48v12" stroke="var(--line)" stroke-width="3"/>
+        </svg>
+        <div>
+          <h3>Patinage</h3>
+          <p>Version glisse, pas artistique. De la vitesse, de l'équilibre et un peu d'adrénaline.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band contact" id="contact">
+  <div class="in">
+    <span class="mono" style="color:var(--accent)">Contact</span>
+    <h2>On bosse <span>ensemble&nbsp;?</span></h2>
+    <p>Je cherche un CDI ou un CDD en communication à Paris, Lille ou Nancy.</p>
+    <div class="mail">
+      <code id="email">noemy.kra@gmail.com</code>
+      <button class="btn" id="copy" type="button">Copier l'adresse</button>
+      <a class="btn ghost" href="https://www.linkedin.com/in/noemykra" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+<footer class="band"><div class="in">Portfolio · Noemy · 2026</div></footer>
+
+<script>
+(function(){
+  var sc=document.querySelector('nav.quick .in'), more=document.getElementById('navMore');
+  function upd(){ more.hidden = !(sc.scrollWidth > sc.clientWidth + 4 && sc.scrollLeft + sc.clientWidth < sc.scrollWidth - 4); }
+  sc.addEventListener('scroll', upd, {passive:true});
+  window.addEventListener('resize', upd);
+  more.addEventListener('click', function(){ sc.scrollBy({left: sc.clientWidth*0.6, behavior:'smooth'}); });
+  upd();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(upd);
+})();
+document.getElementById('copy').addEventListener('click', function(){
+  var b=this, el=document.getElementById('email');
+  function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Adresse sélectionnée';}
+  try{ navigator.clipboard.writeText(el.textContent).then(function(){b.textContent='Adresse copiée';},sel); }catch(e){sel();}
+});
+</script>
+
+</body>
+</html>
